@@ -9,15 +9,8 @@ def account_creation():
     def new_password():
         with open('senhas.txt', 'a') as arquivo:
             arquivo.write('\n{}'.format(new_account_password))
-
-    def account_login():
-        access_login = input(str('Logar no usuario criado? [sim] ou [nao]:  '))
-        if access_login == 'sim':
             sleep(2)
-            print('\nUsuario Logado!\n')
-
-        elif access_login == 'nao':
-            exit()
+            print('\nUsuario criado com sucesso! ')
 
 
     print('Bem vindo ao Cassino do matt \n\n')
@@ -26,5 +19,5 @@ def account_creation():
 
     new_account_password = input(str('Agora digite uma senha: '))
     new_password()
-    account_login()
+ 
 

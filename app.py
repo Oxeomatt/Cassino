@@ -2,7 +2,6 @@ from account_create import *
 from time import sleep
 from carteira import *
 
-c_Coinbase = Coinbase()
 
 print('''
 #################################################
@@ -36,7 +35,7 @@ if app_menu == '1':
 # Nome: {}                               Cash: R$ {}        #     
 #                                                              #
 ################################################################                    
-                    '''.format(account_login))
+                    '''.format(account_login, "0"))
                     
                     
 
